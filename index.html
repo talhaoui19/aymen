@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thérapie par Contrainte Induite | Rééducation Hémiplegie</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      :root {
+        --primary: #0b3d91;
+        --secondary: #1a4fb3;
+        --accent: #f72585;
+        --light: #f8f9fa;
+        --dark: #212529;
+        --gray: #6c757d;
+        --font-main: "Montserrat", sans-serif;
+        --font-heading: "Poppins", sans-serif;
+      }
+
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@600;700&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: var(--font-main);
+        color: var(--dark);
+        line-height: 1.7;
+        background-color: white;
+        overflow-x: hidden;
+      }
+
+      header {
+        background: white;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+      }
+
+      nav {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 1.5rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-family: var(--font-heading);
+        font-weight: 700;
+        font-size: 1.8rem;
+        color: var(--primary);
+      }
+
+      .bg {
+        display: flex;
+        justify-content: center;
+      }
+
+      .hero {
+        padding: 1rem;
+        background: linear-gradient(to right, #0b3d91, #3ba0f2);
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-family: var(--font-heading);
+        font-size: 2.8rem;
+        margin-bottom: 1.5rem;
+        color: var(--light);
+        line-height: 1.2;
+      }
+
+      .hero p {
+        max-width: 700px;
+        margin: 0 auto;
+        font-size: 1.2rem;
+        color: var(--light);
+      }
+
+      .section {
+        max-width: 1000px;
+        margin: 5rem auto;
+        padding: 0 2rem;
+      }
+
+      .section-title {
+        font-family: var(--font-heading);
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: var(--primary);
+        position: relative;
+        display: inline-block;
+      }
+
+      .section-title:after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 60%;
+        height: 4px;
+        background: var(--accent);
+        border-radius: 2px;
+      }
+
+      .card {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        padding: 2.5rem;
+        margin-bottom: 3rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+      }
+
+      .card h3 {
+        font-family: var(--font-heading);
+        color: var(--secondary);
+        margin-bottom: 1.2rem;
+        font-size: 1.5rem;
+      }
+
+      .highlight-box {
+        background: linear-gradient(to right, #f8f9fa, #e9f5ff);
+        border-left: 4px solid var(--primary);
+        padding: 1.5rem;
+        margin: 2rem 0;
+        border-radius: 0 8px 8px 0;
+      }
+
+      .figure-container {
+        text-align: center;
+        margin: 2rem 0;
+      }
+
+      .figure-img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      .figure-caption {
+        font-size: 0.9rem;
+        color: var(--gray);
+        margin-top: 0.5rem;
+      }
+
+      .stats {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .stat-item {
+        text-align: center;
+        padding: 1.5rem;
+        background: #f1f5f9;
+        border-radius: 12px;
+        width: 200px;
+      }
+
+      .stat-number {
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: var(--primary);
+        margin-bottom: 0.5rem;
+      }
+
+      footer {
+        background: var(--primary);
+        color: white;
+        padding: 2rem;
+        text-align: center;
+        margin-top: 5rem;
+      }
+
+      .footer-content h3 {
+        font-family: var(--font-heading);
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">CIMT</div>
+        <div>Guebli Aymen</div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="bg">
+        <img src="./bg-img.png" alt="bg image" />
+      </section>
+      <section class="hero">
+        <h1>La thérapie par le mouvement induit par la contrainte</h1>
+        <p>
+          Une méthode innovante de rééducation du membre supérieur chez l'adulte
+          hémiplégique
+        </p>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Introduction</h2>
+
+        <div class="card">
+          <div class="highlight-box">
+            <p>
+              50 à 75% des patients présentent, à la suite de leur rééducation
+              (3 à 6 mois après l'AVC), des difficultés dans l'utilisation de
+              leur membre supérieur [9].
+            </p>
+          </div>
+
+          <p>
+            La contrainte induite a vu le jour après des observations de
+            non-utilisations de membres parétiques malgré une commande motrice
+            fonctionnelle. E. Taub l'a défini comme étant une « technique de
+            rééducation visant à modifier le comportement du patient vis-à-vis de
+            son membre déficitaire, avec pour objectif de réduire
+            substantiellement les incapacités en augmentant l'utilisation du
+            membre supérieur dans les activités de la vie quotidienne (AVQ) ».
+          </p>
+          <p>
+            La HAS, en 2012, évalue cette technique à un grade B (« présomption
+            scientifique fournie par des études de niveau intermédiaire de
+            preuve ») pour la phase chronique de l'AVC sous la seule condition
+            d'une récupération motrice des muscles de la loge postérieure de
+            l'avant-bras. Aucun grade n'est donné pour la phase subaiguë et des
+            effets délétères seraient possibles pour la phase aiguë [1]. Des
+            études internationales récentes montrent des effets bénéfiques au
+            niveau de la phase aiguë malgré un biais commun à ce genre d'étude :
+            le faible échantillon de population [10].
+          </p>
+          <p>
+            La thérapie par contrainte induite consiste en une limitation plus ou
+            moins importante du membre supérieur non-parétique sur un temps
+            d'éveil important. L'utilisation forcée du membre atteint permet de
+            développer sa motricité.
+          </p>
+        </div>
+
+        <div class="stats">
+          <div class="stat-item">
+            <div class="stat-number">50-75%</div>
+            <div>des patients post-AVC</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">Grade B</div>
+            <div>Recommandation HAS</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">3-6 mois</div>
+            <div>Après rééducation</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">Les principes</h2>
+
+        <div class="card">
+          <p>
+            La thérapie par contrainte induite a pour objectif de lutter contre
+            la sous-utilisation acquise du membre parétique malgré une
+            récupération motrice de celui-ci. Elle cherche à réintégrer le
+            membre lésé dans les gestes quotidiens. Le concept-clé de cette
+            technique est la sous-utilisation acquise ou bien appelée amnésie
+            motrice fonctionnelle ou plus simplement exclusion du membre. Trois
+            théories justifient cette exclusion : l'une prône la déafférentation
+            tandis que la deuxième parle de dysafférentation. Quant à la
+            dernière, elle montre une corrélation entre l'héminégligence
+            corporelle et la sous-utilisation acquise. Aucune n'a, à ce jour, pu
+            être démontrée mais elles ont le mérite de soulever de probables
+            justifications.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <h3>Thérapie par Contrainte Induite</h3>
+        <p>Méthode de rééducation validée par la communauté scientifique</p>
+        <p style="margin-top: 2rem">
+          © 2025 Tous droits réservés - Guebli Aymen
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
